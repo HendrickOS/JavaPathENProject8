@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8552e38b-da3d-4513-9f96-7b8a6d7ca891" name="Default Changelist" comment="" />
+    <list default="true" id="8552e38b-da3d-4513-9f96-7b8a6d7ca891" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,6 +16,26 @@
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
     </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="TourGuide" type="f1a62948:ProjectNode" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -42,7 +64,7 @@
       <recent name="C:\Users\Hendrick\eclipse-workspace\JavaPathENProject8\TourGuide\libs\gpsUtil.jar!\gpsUtil\location" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.TestPerformance.highVolumeGetRewards">
+  <component name="RunManager" selected="Gradle.TestPerformance.highVolumeTrackLocation">
     <configuration name="Application" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="tourGuide.Application" />
       <module name="TourGuide.main" />
@@ -100,8 +122,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.TestPerformance.highVolumeGetRewards" />
         <item itemvalue="Gradle.TestPerformance.highVolumeTrackLocation" />
+        <item itemvalue="Gradle.TestPerformance.highVolumeGetRewards" />
         <item itemvalue="Application.Application" />
       </list>
     </recent_temporary>
@@ -130,6 +152,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/TourGuide$TestPerformance_highVolumeTrackLocation.ic" NAME="TestPerformance.highVolumeTrackLocation Coverage Results" MODIFIED="1652483811093" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/TourGuide$TestPerformance_highVolumeTrackLocation.ic" NAME="TestPerformance.highVolumeTrackLocation Coverage Results" MODIFIED="1652518362138" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>
