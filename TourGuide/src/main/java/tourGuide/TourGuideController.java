@@ -1,6 +1,8 @@
 package tourGuide;
 
+import java.util.ArrayList;
 import java.util.List;
+import java.util.UUID;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -45,6 +47,12 @@ public class TourGuideController {
     	VisitedLocation visitedLocation = tourGuideService.getUserLocation(getUser(userName));
     	return JsonStream.serialize(tourGuideService.getNearByAttractions(visitedLocation));
     }
+
+    @RequestMapping("/getNearbyAttractionsEdit")
+    public String getNearbyAttractionsEdit(@RequestParam String userName) {
+        VisitedLocation visitedLocation = tourGuideService.getUserLocation(getUser(userName));
+        return JsonStream.serialize(tourGuideService.getNearByAttractions(visitedLocation));
+    }
     
     @RequestMapping("/getRewards") 
     public String getRewards(@RequestParam String userName) {
@@ -62,8 +70,33 @@ public class TourGuideController {
     	//        "019b04a9-067a-4c76-8817-ee75088c3822": {"longitude":-48.188821,"latitude":74.84371} 
     	//        ...
     	//     }
+
+        /* Liste des users */
+        List<User> usersList = tourGuideService.getAllUsers();
+
+        /* Liste des users ID */
+        List<UUID> idList = new ArrayList<>();
+        for (User user : usersList){
+            idList.add(user.getUserId());
+        }
+
+        /* User's Location History */
+//        tourGuideService.generateUserLocationHistory(user);
+
+        VisitedLocation lastVisitedLocation = null;
+        StringBuilder result = new StringBuilder();
+        for (User user : usersList){
+            result.append(user.getUserId());
+            result.append(" : { ");
+            for (VisitedLocation visitedLocation : user.getVisitedLocations()){
+                lastVisitedLocation = visitedLocation;
+            }
+            result.append(lastVisitedLocation); // Dernier élément d'une liste : list.size()-1
+            result.append(" }");
+        }
     	
-    	return JsonStream.serialize("");
+//    	return JsonStream.serialize("");
+        return JsonStream.serialize(result);
     }
     
     @RequestMapping("/getTripDeals")

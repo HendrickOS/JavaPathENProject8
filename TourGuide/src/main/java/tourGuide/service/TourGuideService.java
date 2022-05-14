@@ -2,13 +2,7 @@ package tourGuide.service;
 
 import java.time.LocalDateTime;
 import java.time.ZoneOffset;
-import java.util.ArrayList;
-import java.util.Date;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-import java.util.Random;
-import java.util.UUID;
+import java.util.*;
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 
@@ -20,6 +14,7 @@ import gpsUtil.GpsUtil;
 import gpsUtil.location.Attraction;
 import gpsUtil.location.Location;
 import gpsUtil.location.VisitedLocation;
+import tourGuide.attraction.Proximate;
 import tourGuide.helper.InternalTestHelper;
 import tourGuide.tracker.Tracker;
 import tourGuide.user.User;
@@ -35,7 +30,7 @@ public class TourGuideService {
 	private final TripPricer tripPricer = new TripPricer();
 	public final Tracker tracker;
 	boolean testMode = true;
-	
+
 	public TourGuideService(GpsUtil gpsUtil, RewardsService rewardsService) {
 		this.gpsUtil = gpsUtil;
 		this.rewardsService = rewardsService;
@@ -90,6 +85,39 @@ public class TourGuideService {
 		return visitedLocation;
 	}
 
+	// New method using MultiThreading
+	public void trackUserLocations(List<User> users, int threadNumber){
+		List<Thread> threads = new ArrayList<>();
+		for (int i=0; i<threadNumber; i++){
+			int subListSize = users.size()/threadNumber;
+			List<User> tmp = new ArrayList<>();
+			tmp.addAll(users.subList(i*subListSize, (i+1)*subListSize));
+			Thread myThread = new Thread() {
+				List<User> users;
+				@Override
+				public void run() {
+					for (User user: users) {
+//						trackUserLocation(user);
+						try {
+							Thread.sleep(100);
+						} catch (InterruptedException e) {
+							e.printStackTrace();
+						}
+					}
+				}
+				public Thread init(List<User> users){
+					this.users = users;
+					return this;
+				}
+			}.init(tmp);
+			threads.add(myThread);
+		}
+		for (Thread thread : threads) {
+//			thread.run();
+			thread.start();
+		}
+	}
+
 	public List<Attraction> getNearByAttractions(VisitedLocation visitedLocation) {
 		List<Attraction> nearbyAttractions = new ArrayList<>();
 		for(Attraction attraction : gpsUtil.getAttractions()) {
@@ -97,8 +125,29 @@ public class TourGuideService {
 				nearbyAttractions.add(attraction);
 			}
 		}
-		
 		return nearbyAttractions;
+	}
+
+	/*New Method*/
+	public List<Attraction> getFiveClosestAttractions(VisitedLocation visitedLocation) {
+		List<Attraction> fiveClosestAttractions = new ArrayList<>();
+		List<Proximate> attractionsList = new ArrayList<>();
+		int maxClosestAttraction = 5;
+		Proximate proximateAttraction = new Proximate();
+
+		for (Attraction attraction : gpsUtil.getAttractions()){
+			proximateAttraction.setAttraction(attraction);
+			proximateAttraction.setDistance(rewardsService.getDistance(attraction, visitedLocation.location));
+			attractionsList.add(proximateAttraction);
+		}
+
+		Collections.sort(attractionsList);
+
+		for (int i=0; i<maxClosestAttraction;i++) {
+			fiveClosestAttractions.add(attractionsList.get(i).getAttraction());
+		}
+
+		return fiveClosestAttractions;
 	}
 	
 	private void addShutDownHook() {
