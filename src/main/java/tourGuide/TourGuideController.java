@@ -128,7 +128,22 @@ public class TourGuideController {
     @RequestMapping("/updateUserPreference")
     public UserPreferences updateUserPreference(@RequestParam String userName){
 
-        return getUser(userName).getUserPreferences();
+        User userUpdate = getUser(userName);
+        UserPreferences userPreferences = userUpdate.getUserPreferences();
+
+        /*Set of each preferences*/
+        userPreferences.setAttractionProximity();
+        userPreferences.setLowerPricePoint();
+        userPreferences.setHighPricePoint();
+        userPreferences.setTripDuration();
+        userPreferences.setTicketQuantity();
+        userPreferences.setNumberOfAdults();
+        userPreferences.setNumberOfChildren();
+
+        /*Save the result*/
+        user.save(userUpdate);
+
+        return userPreferences;
     }
     
     @RequestMapping("/getTripDeals")
