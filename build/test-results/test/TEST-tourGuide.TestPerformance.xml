@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="tourGuide.TestPerformance" tests="2" skipped="0" failures="0" errors="0" timestamp="2022-06-15T19:09:39" hostname="fv-az241-328" time="211.666">
+<testsuite name="tourGuide.TestPerformance" tests="2" skipped="0" failures="0" errors="0" timestamp="2022-06-16T08:56:10" hostname="fv-az465-648" time="212.686">
   <properties/>
-  <testcase name="highVolumeTrackLocation" classname="tourGuide.TestPerformance" time="100.326"/>
-  <testcase name="highVolumeGetRewards" classname="tourGuide.TestPerformance" time="111.34"/>
-  <system-out><![CDATA[19:09:39.988 [Test worker] INFO tourGuide.service.TourGuideService - TestMode enabled
-19:09:39.988 [Test worker] DEBUG tourGuide.service.TourGuideService - Initializing users
-19:09:40.942 [Test worker] DEBUG tourGuide.service.TourGuideService - Created 100000 internal test users.
-19:09:40.943 [Test worker] DEBUG tourGuide.service.TourGuideService - Finished initializing users
-19:09:40.967 [pool-6-thread-1] DEBUG tourGuide.tracker.Tracker - Begin Tracker. Tracking 100000 users.
+  <testcase name="highVolumeTrackLocation" classname="tourGuide.TestPerformance" time="100.377"/>
+  <testcase name="highVolumeGetRewards" classname="tourGuide.TestPerformance" time="112.309"/>
+  <system-out><![CDATA[08:56:10.084 [Test worker] INFO tourGuide.service.TourGuideService - TestMode enabled
+08:56:10.084 [Test worker] DEBUG tourGuide.service.TourGuideService - Initializing users
+08:56:11.040 [Test worker] DEBUG tourGuide.service.TourGuideService - Created 100000 internal test users.
+08:56:11.040 [Test worker] DEBUG tourGuide.service.TourGuideService - Finished initializing users
+08:56:11.067 [pool-6-thread-1] DEBUG tourGuide.tracker.Tracker - Begin Tracker. Tracking 100000 users.
 highVolumeTrackLocation: Time Elapsed: 99 seconds.
-19:11:20.313 [Test worker] INFO tourGuide.service.TourGuideService - TestMode enabled
-19:11:20.314 [Test worker] DEBUG tourGuide.service.TourGuideService - Initializing users
-19:11:20.798 [Test worker] DEBUG tourGuide.service.TourGuideService - Created 100000 internal test users.
-19:11:20.801 [Test worker] DEBUG tourGuide.service.TourGuideService - Finished initializing users
-19:11:20.808 [pool-7-thread-1] DEBUG tourGuide.tracker.Tracker - Begin Tracker. Tracking 100000 users.
-highVolumeGetRewards: Time Elapsed: 111 seconds.
+08:57:50.458 [Test worker] INFO tourGuide.service.TourGuideService - TestMode enabled
+08:57:50.458 [Test worker] DEBUG tourGuide.service.TourGuideService - Initializing users
+08:57:50.812 [Test worker] DEBUG tourGuide.service.TourGuideService - Created 100000 internal test users.
+08:57:50.812 [Test worker] DEBUG tourGuide.service.TourGuideService - Finished initializing users
+08:57:50.821 [pool-7-thread-1] DEBUG tourGuide.tracker.Tracker - Begin Tracker. Tracking 100000 users.
+highVolumeGetRewards: Time Elapsed: 112 seconds.
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

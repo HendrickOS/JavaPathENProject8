@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="tourGuide.TestRewardsService" tests="3" skipped="1" failures="0" errors="0" timestamp="2022-06-16T08:56:09" hostname="fv-az465-648" time="0.504">
+  <properties/>
+  <testcase name="nearAllAttractions" classname="tourGuide.TestRewardsService" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="userGetRewards" classname="tourGuide.TestRewardsService" time="0.478"/>
+  <testcase name="isWithinAttractionProximity" classname="tourGuide.TestRewardsService" time="0.023"/>
+  <system-out><![CDATA[08:56:09.552 [Test worker] INFO tourGuide.service.TourGuideService - TestMode enabled
+08:56:09.563 [Test worker] DEBUG tourGuide.service.TourGuideService - Initializing users
+08:56:09.567 [Test worker] DEBUG tourGuide.service.TourGuideService - Created 0 internal test users.
+08:56:09.569 [Test worker] DEBUG tourGuide.service.TourGuideService - Finished initializing users
+08:56:09.593 [pool-1-thread-1] DEBUG tourGuide.tracker.Tracker - Begin Tracker. Tracking 0 users.
+08:56:09.599 [pool-1-thread-1] DEBUG tourGuide.tracker.Tracker - Tracker Time Elapsed: 0 seconds.
+08:56:09.600 [pool-1-thread-1] DEBUG tourGuide.tracker.Tracker - Tracker sleeping
+]]></system-out>
+  <system-err><![CDATA[Jun 16, 2022 8:56:09 AM org.javamoney.moneta.DefaultMonetaryContextFactory createMonetaryContextNonNullConfig
+INFO: Using custom MathContext: precision=256, roundingMode=HALF_EVEN
+]]></system-err>
+</testsuite>
