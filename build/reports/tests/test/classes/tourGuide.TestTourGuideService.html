@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">0.146s</div>
+<div class="counter">0.216s</div>
 <p>duration</p>
 </div>
 </td>
@@ -79,12 +79,12 @@
 </thead>
 <tr>
 <td class="success">addUser</td>
-<td class="success">0.013s</td>
+<td class="success">0.012s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">getAllUsers</td>
-<td class="success">0.012s</td>
+<td class="success">0.014s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
@@ -94,12 +94,12 @@
 </tr>
 <tr>
 <td class="success">getUserLocation</td>
-<td class="success">0.077s</td>
+<td class="success">0.111s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">trackUser</td>
-<td class="success">0.044s</td>
+<td class="success">0.079s</td>
 <td class="success">passed</td>
 </tr>
 </table>
@@ -107,30 +107,34 @@
 <div id="tab1" class="tab">
 <h2>Standard output</h2>
 <span class="code">
-<pre>13:24:45.512 [Test worker] INFO tourGuide.service.TourGuideService - TestMode enabled
-13:24:45.513 [Test worker] DEBUG tourGuide.service.TourGuideService - Initializing users
-13:24:45.513 [Test worker] DEBUG tourGuide.service.TourGuideService - Created 0 internal test users.
-13:24:45.514 [Test worker] DEBUG tourGuide.service.TourGuideService - Finished initializing users
-13:24:45.515 [pool-2-thread-1] DEBUG tourGuide.tracker.Tracker - Begin Tracker. Tracking 0 users.
-13:24:45.516 [pool-2-thread-1] DEBUG tourGuide.tracker.Tracker - Tracker Time Elapsed: 0 seconds.
-13:24:45.516 [pool-2-thread-1] DEBUG tourGuide.tracker.Tracker - Tracker sleeping
-13:24:45.587 [Test worker] INFO tourGuide.service.TourGuideService - TestMode enabled
-13:24:45.587 [Test worker] DEBUG tourGuide.service.TourGuideService - Initializing users
-13:24:45.587 [Test worker] DEBUG tourGuide.service.TourGuideService - Created 0 internal test users.
-13:24:45.588 [Test worker] DEBUG tourGuide.service.TourGuideService - Finished initializing users
-13:24:45.590 [pool-3-thread-1] DEBUG tourGuide.tracker.Tracker - Tracker stopping
-13:24:45.600 [Test worker] INFO tourGuide.service.TourGuideService - TestMode enabled
-13:24:45.600 [Test worker] DEBUG tourGuide.service.TourGuideService - Initializing users
-13:24:45.600 [Test worker] DEBUG tourGuide.service.TourGuideService - Created 0 internal test users.
-13:24:45.600 [Test worker] DEBUG tourGuide.service.TourGuideService - Finished initializing users
-13:24:45.602 [pool-4-thread-1] DEBUG tourGuide.tracker.Tracker - Tracker stopping
-13:24:45.612 [Test worker] INFO tourGuide.service.TourGuideService - TestMode enabled
-13:24:45.612 [Test worker] DEBUG tourGuide.service.TourGuideService - Initializing users
-13:24:45.612 [Test worker] DEBUG tourGuide.service.TourGuideService - Created 0 internal test users.
-13:24:45.612 [Test worker] DEBUG tourGuide.service.TourGuideService - Finished initializing users
-13:24:45.613 [pool-5-thread-1] DEBUG tourGuide.tracker.Tracker - Begin Tracker. Tracking 0 users.
-13:24:45.613 [pool-5-thread-1] DEBUG tourGuide.tracker.Tracker - Tracker Time Elapsed: 0 seconds.
-13:24:45.613 [pool-5-thread-1] DEBUG tourGuide.tracker.Tracker - Tracker sleeping
+<pre>13:50:52.441 [Test worker] INFO tourGuide.service.TourGuideService - TestMode enabled
+13:50:52.442 [Test worker] DEBUG tourGuide.service.TourGuideService - Initializing users
+13:50:52.444 [Test worker] DEBUG tourGuide.service.TourGuideService - Created 0 internal test users.
+13:50:52.445 [Test worker] DEBUG tourGuide.service.TourGuideService - Finished initializing users
+13:50:52.446 [pool-2-thread-1] DEBUG tourGuide.tracker.Tracker - Begin Tracker. Tracking 0 users.
+13:50:52.446 [pool-2-thread-1] DEBUG tourGuide.tracker.Tracker - Tracker Time Elapsed: 0 seconds.
+13:50:52.447 [pool-2-thread-1] DEBUG tourGuide.tracker.Tracker - Tracker sleeping
+13:50:52.550 [Test worker] INFO tourGuide.service.TourGuideService - TestMode enabled
+13:50:52.551 [Test worker] DEBUG tourGuide.service.TourGuideService - Initializing users
+13:50:52.551 [Test worker] DEBUG tourGuide.service.TourGuideService - Created 0 internal test users.
+13:50:52.551 [Test worker] DEBUG tourGuide.service.TourGuideService - Finished initializing users
+13:50:52.552 [pool-3-thread-1] DEBUG tourGuide.tracker.Tracker - Begin Tracker. Tracking 0 users.
+13:50:52.552 [pool-3-thread-1] DEBUG tourGuide.tracker.Tracker - Tracker Time Elapsed: 0 seconds.
+13:50:52.552 [pool-3-thread-1] DEBUG tourGuide.tracker.Tracker - Tracker sleeping
+13:50:52.563 [Test worker] INFO tourGuide.service.TourGuideService - TestMode enabled
+13:50:52.564 [Test worker] DEBUG tourGuide.service.TourGuideService - Initializing users
+13:50:52.564 [Test worker] DEBUG tourGuide.service.TourGuideService - Created 0 internal test users.
+13:50:52.564 [Test worker] DEBUG tourGuide.service.TourGuideService - Finished initializing users
+13:50:52.566 [pool-4-thread-1] DEBUG tourGuide.tracker.Tracker - Begin Tracker. Tracking 0 users.
+13:50:52.566 [pool-4-thread-1] DEBUG tourGuide.tracker.Tracker - Tracker Time Elapsed: 0 seconds.
+13:50:52.566 [pool-4-thread-1] DEBUG tourGuide.tracker.Tracker - Tracker sleeping
+13:50:52.578 [Test worker] INFO tourGuide.service.TourGuideService - TestMode enabled
+13:50:52.578 [Test worker] DEBUG tourGuide.service.TourGuideService - Initializing users
+13:50:52.578 [Test worker] DEBUG tourGuide.service.TourGuideService - Created 0 internal test users.
+13:50:52.579 [Test worker] DEBUG tourGuide.service.TourGuideService - Finished initializing users
+13:50:52.580 [pool-5-thread-1] DEBUG tourGuide.tracker.Tracker - Begin Tracker. Tracking 0 users.
+13:50:52.580 [pool-5-thread-1] DEBUG tourGuide.tracker.Tracker - Tracker Time Elapsed: 0 seconds.
+13:50:52.580 [pool-5-thread-1] DEBUG tourGuide.tracker.Tracker - Tracker sleeping
 </pre>
 </span>
 </div>
@@ -142,7 +146,7 @@
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 4.8.1</a> at Jun 17, 2022, 1:28:21 PM</p>
+<a href="http://www.gradle.org">Gradle 4.8.1</a> at Jun 17, 2022, 1:54:24 PM</p>
 </div>
 </div>
 </body>
