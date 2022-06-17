@@ -122,6 +122,13 @@ public class TourGuideController {
         result.append("}");
         return result.toString();
     }
+
+    /* Mise à jour des préférences utilisateurs */
+    @RequestMapping("/updateUserPreference")
+    public User updateUserPreference(@RequestParam String userName){
+        getUser(userName);
+        return getUser(userName);
+    }
     
     @RequestMapping("/getTripDeals")
     public String getTripDeals(@RequestParam String userName) {
