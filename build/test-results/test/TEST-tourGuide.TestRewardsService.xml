@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="tourGuide.TestRewardsService" tests="3" skipped="1" failures="0" errors="0" timestamp="2022-06-17T13:24:43" hostname="fv-az275-799" time="1.507">
+<testsuite name="tourGuide.TestRewardsService" tests="3" skipped="1" failures="0" errors="0" timestamp="2022-06-17T13:50:51" hostname="fv-az47-676" time="1.058">
   <properties/>
   <testcase name="nearAllAttractions" classname="tourGuide.TestRewardsService" time="0.0">
     <skipped/>
   </testcase>
-  <testcase name="userGetRewards" classname="tourGuide.TestRewardsService" time="1.48"/>
+  <testcase name="userGetRewards" classname="tourGuide.TestRewardsService" time="1.029"/>
   <testcase name="isWithinAttractionProximity" classname="tourGuide.TestRewardsService" time="0.023"/>
-  <system-out><![CDATA[13:24:44.251 [Test worker] INFO tourGuide.service.TourGuideService - TestMode enabled
-13:24:44.264 [Test worker] DEBUG tourGuide.service.TourGuideService - Initializing users
-13:24:44.270 [Test worker] DEBUG tourGuide.service.TourGuideService - Created 0 internal test users.
-13:24:44.272 [Test worker] DEBUG tourGuide.service.TourGuideService - Finished initializing users
-13:24:44.310 [pool-1-thread-1] DEBUG tourGuide.tracker.Tracker - Begin Tracker. Tracking 0 users.
-13:24:44.315 [pool-1-thread-1] DEBUG tourGuide.tracker.Tracker - Tracker Time Elapsed: 0 seconds.
-13:24:44.316 [pool-1-thread-1] DEBUG tourGuide.tracker.Tracker - Tracker sleeping
+  <system-out><![CDATA[13:50:51.561 [Test worker] INFO tourGuide.service.TourGuideService - TestMode enabled
+13:50:51.569 [Test worker] DEBUG tourGuide.service.TourGuideService - Initializing users
+13:50:51.577 [Test worker] DEBUG tourGuide.service.TourGuideService - Created 0 internal test users.
+13:50:51.579 [Test worker] DEBUG tourGuide.service.TourGuideService - Finished initializing users
+13:50:51.608 [pool-1-thread-1] DEBUG tourGuide.tracker.Tracker - Begin Tracker. Tracking 0 users.
+13:50:51.614 [pool-1-thread-1] DEBUG tourGuide.tracker.Tracker - Tracker Time Elapsed: 0 seconds.
+13:50:51.615 [pool-1-thread-1] DEBUG tourGuide.tracker.Tracker - Tracker sleeping
 ]]></system-out>
-  <system-err><![CDATA[Jun 17, 2022 1:24:44 PM org.javamoney.moneta.DefaultMonetaryContextFactory createMonetaryContextNonNullConfig
+  <system-err><![CDATA[Jun 17, 2022 1:50:51 PM org.javamoney.moneta.DefaultMonetaryContextFactory createMonetaryContextNonNullConfig
 INFO: Using custom MathContext: precision=256, roundingMode=HALF_EVEN
 ]]></system-err>
 </testsuite>
