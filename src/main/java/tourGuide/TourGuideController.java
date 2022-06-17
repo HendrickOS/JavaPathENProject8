@@ -17,6 +17,7 @@ import com.jsoniter.output.JsonStream;
 import gpsUtil.location.VisitedLocation;
 import tourGuide.service.TourGuideService;
 import tourGuide.user.User;
+import tourGuide.user.UserPreferences;
 import tripPricer.Provider;
 
 @RestController
@@ -125,9 +126,9 @@ public class TourGuideController {
 
     /* Mise à jour des préférences utilisateurs */
     @RequestMapping("/updateUserPreference")
-    public User updateUserPreference(@RequestParam String userName){
-        getUser(userName);
-        return getUser(userName);
+    public UserPreferences updateUserPreference(@RequestParam String userName){
+
+        return getUser(userName).getUserPreferences();
     }
     
     @RequestMapping("/getTripDeals")
