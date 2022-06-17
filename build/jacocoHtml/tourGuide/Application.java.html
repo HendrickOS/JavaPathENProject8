@@ -3,12 +3,16 @@
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
+import java.util.Locale;
+
 @SpringBootApplication
-<span class="nc" id="L7">public class Application {</span>
+<span class="nc" id="L9">public class Application {</span>
 
     public static void main(String[] args) {
 
-<span class="nc" id="L11">        SpringApplication.run(Application.class, args);</span>
+<span class="nc" id="L13">        Locale.setDefault(Locale.US);</span>
+
+<span class="nc" id="L15">        SpringApplication.run(Application.class, args);</span>
 
 //        MultiThreading multiThreading = new MultiThreading();
 //        multiThreading.start();
@@ -24,7 +28,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 //            multiThreading.start();
 //        }
 
-<span class="nc" id="L27">    }</span>
+<span class="nc" id="L31">    }</span>
 
 }
 </pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.4.201905082037</span></div></body></html>
