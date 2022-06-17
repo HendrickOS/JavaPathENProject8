@@ -122,15 +122,22 @@ import tripPricer.Provider;
 <span class="nc" id="L122">        result.append(&quot;}&quot;);</span>
 <span class="nc" id="L123">        return result.toString();</span>
     }
+
+    /* Mise à jour des préférences utilisateurs */
+    @RequestMapping(&quot;/updateUserPreference&quot;)
+    public User updateUserPreference(@RequestParam String userName){
+<span class="nc" id="L129">        getUser(userName);</span>
+<span class="nc" id="L130">        return getUser(userName);</span>
+    }
     
     @RequestMapping(&quot;/getTripDeals&quot;)
     public String getTripDeals(@RequestParam String userName) {
-<span class="nc" id="L128">    	List&lt;Provider&gt; providers = tourGuideService.getTripDeals(getUser(userName));</span>
-<span class="nc" id="L129">    	return JsonStream.serialize(providers);</span>
+<span class="nc" id="L135">    	List&lt;Provider&gt; providers = tourGuideService.getTripDeals(getUser(userName));</span>
+<span class="nc" id="L136">    	return JsonStream.serialize(providers);</span>
     }
     
     private User getUser(String userName) {
-<span class="nc" id="L133">    	return tourGuideService.getUser(userName);</span>
+<span class="nc" id="L140">    	return tourGuideService.getUser(userName);</span>
     }
    
 
