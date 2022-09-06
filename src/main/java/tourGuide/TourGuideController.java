@@ -125,26 +125,26 @@ public class TourGuideController {
     }
 
     /* Mise à jour des préférences utilisateurs */
-    @RequestMapping("/updateUserPreference")
-    public UserPreferences updateUserPreference(@RequestParam String userName){
-
-        User userUpdate = getUser(userName);
-        UserPreferences userPreferences = userUpdate.getUserPreferences();
-
-        /*Set of each preferences*/
-        userPreferences.setAttractionProximity();
-        userPreferences.setLowerPricePoint();
-        userPreferences.setHighPricePoint();
-        userPreferences.setTripDuration();
-        userPreferences.setTicketQuantity();
-        userPreferences.setNumberOfAdults();
-        userPreferences.setNumberOfChildren();
-
-        /*Save the result*/
-        user.save(userUpdate);
-
-        return userPreferences;
-    }
+//    @RequestMapping("/updateUserPreference")
+//    public UserPreferences updateUserPreference(@RequestParam String userName){
+//
+//        User userUpdate = getUser(userName);
+//        UserPreferences userPreferences = userUpdate.getUserPreferences();
+//
+//        /*Set of each preferences*/
+//        userPreferences.setAttractionProximity(100);
+//        userPreferences.setLowerPricePoint();
+//        userPreferences.setHighPricePoint();
+//        userPreferences.setTripDuration();
+//        userPreferences.setTicketQuantity();
+//        userPreferences.setNumberOfAdults();
+//        userPreferences.setNumberOfChildren();
+//
+//        /*Save the result*/
+//        user.save(userUpdate);
+//
+//        return userPreferences;
+//    }
     
     @RequestMapping("/getTripDeals")
     public String getTripDeals(@RequestParam String userName) {
