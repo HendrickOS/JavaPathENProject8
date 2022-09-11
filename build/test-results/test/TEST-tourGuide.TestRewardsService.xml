@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< HEAD
 <testsuite name="tourGuide.TestRewardsService" tests="1" skipped="0" failures="1" errors="0" timestamp="2022-09-11T08:45:34" hostname="ALIENWARE-M15R4" time="0.315">
   <properties/>
   <testcase name="userGetRewards_notEmptyUserRewards" classname="tourGuide.TestRewardsService" time="0.315">
@@ -68,5 +69,24 @@
 ]]></system-out>
   <system-err><![CDATA[sept. 11, 2022 10:45:34 AM org.javamoney.moneta.DefaultMonetaryContextFactory createMonetaryContextNonNullConfig
 INFOS: Using custom MathContext: precision=256, roundingMode=HALF_EVEN
+=======
+<testsuite name="tourGuide.TestRewardsService" tests="3" skipped="1" failures="0" errors="0" timestamp="2022-09-06T13:38:59" hostname="fv-az196-200" time="0.499">
+  <properties/>
+  <testcase name="nearAllAttractions" classname="tourGuide.TestRewardsService" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="userGetRewards" classname="tourGuide.TestRewardsService" time="0.474"/>
+  <testcase name="isWithinAttractionProximity" classname="tourGuide.TestRewardsService" time="0.022"/>
+  <system-out><![CDATA[13:38:59.829 [Test worker] INFO tourGuide.service.TourGuideService - TestMode enabled
+13:38:59.838 [Test worker] DEBUG tourGuide.service.TourGuideService - Initializing users
+13:38:59.843 [Test worker] DEBUG tourGuide.service.TourGuideService - Created 0 internal test users.
+13:38:59.844 [Test worker] DEBUG tourGuide.service.TourGuideService - Finished initializing users
+13:38:59.869 [pool-1-thread-1] DEBUG tourGuide.tracker.Tracker - Begin Tracker. Tracking 0 users.
+13:38:59.873 [pool-1-thread-1] DEBUG tourGuide.tracker.Tracker - Tracker Time Elapsed: 0 seconds.
+13:38:59.878 [pool-1-thread-1] DEBUG tourGuide.tracker.Tracker - Tracker sleeping
+]]></system-out>
+  <system-err><![CDATA[Sep 06, 2022 1:38:59 PM org.javamoney.moneta.DefaultMonetaryContextFactory createMonetaryContextNonNullConfig
+INFO: Using custom MathContext: precision=256, roundingMode=HALF_EVEN
+>>>>>>> e53af8dd3f5779e1293683d2bfb36a2aac5ecb93
 ]]></system-err>
 </testsuite>

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="fr"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>TourGuideController.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">TourGuide</a> &gt; <a href="index.source.html" class="el_package">tourGuide</a> &gt; <span class="el_source">TourGuideController.java</span></div><h1>TourGuideController.java</h1><pre class="source lang-java linenums">package tourGuide;
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>TourGuideController.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">TourGuide</a> &gt; <a href="index.source.html" class="el_package">tourGuide</a> &gt; <span class="el_source">TourGuideController.java</span></div><h1>TourGuideController.java</h1><pre class="source lang-java linenums">package tourGuide;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -114,7 +114,7 @@ import tripPricer.Provider;
 <span class="nc" id="L114">            result.append(user.getUserId());</span>
 <span class="nc" id="L115">            result.append(&quot; : &quot;);</span>
 
-<span class="nc" id="L117">            int sizeOfVisitedLocationsList = user.getVisitedLocations().size()-1; /* Dernier Ã©lÃ©ment d'une liste : list.size()-1 */</span>
+<span class="nc" id="L117">            int sizeOfVisitedLocationsList = user.getVisitedLocations().size()-1; /* Dernier élément d'une liste : list.size()-1 */</span>
 <span class="nc" id="L118">            List&lt;VisitedLocation&gt; visitedLocationsList = user.getVisitedLocations();</span>
 <span class="nc" id="L119">            VisitedLocation lastVisitedLocation = visitedLocationsList.get(sizeOfVisitedLocationsList);</span>
 <span class="nc" id="L120">            result.append(JsonStream.serialize(lastVisitedLocation.location));</span>
@@ -124,7 +124,7 @@ import tripPricer.Provider;
 <span class="nc" id="L124">        return result.toString();</span>
     }
 
-    /* Mise Ã  jour des prÃ©fÃ©rences utilisateurs */
+    /* Mise à jour des préférences utilisateurs */
 //    @RequestMapping(&quot;/updateUserPreference&quot;)
 //    public UserPreferences updateUserPreference(@RequestParam String userName){
 //
