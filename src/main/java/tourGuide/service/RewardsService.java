@@ -42,7 +42,6 @@ public class RewardsService {
 	public void calculateRewards(User user) {
 		List<VisitedLocation> userLocations = user.getVisitedLocations();
 
-		
 		for(VisitedLocation visitedLocation : userLocations) {
 			for(Attraction attraction : attractions) {
 				if(user.getUserRewards().stream().filter(r -> r.attraction.attractionName.equals(attraction.attractionName)).count() == 0) {
@@ -55,7 +54,7 @@ public class RewardsService {
 	}
 
 	// New method using MultiThreading
-	public void calculateRewards2(List<User> users, int threadNumber) throws InterruptedException {
+	public void calculateRewardsMultiThreading(List<User> users, int threadNumber) throws InterruptedException {
 		List<Thread> threads = new ArrayList<>();
 		for (int i=0; i<threadNumber; i++){
 			int subListSize = users.size()/threadNumber;

@@ -6,7 +6,6 @@ import java.util.*;
 import java.util.concurrent.TimeUnit;
 
 import org.apache.commons.lang3.time.StopWatch;
-import org.junit.Ignore;
 import org.junit.Test;
 
 import gpsUtil.GpsUtil;
@@ -17,7 +16,6 @@ import tourGuide.helper.InternalTestHelper;
 import tourGuide.service.RewardsService;
 import tourGuide.service.TourGuideService;
 import tourGuide.user.User;
-import tourGuide.user.UserReward;
 
 public class TestPerformance {
 	
@@ -60,7 +58,7 @@ public class TestPerformance {
 //		for(User user : allUsers) {
 //			tourGuideService.trackUserLocation(user);
 //		}
-		tourGuideService.trackUserLocations(allUsers, 500);
+		tourGuideService.trackUserLocationMultiThreading(allUsers, 500);
 		stopWatch.stop();
 		tourGuideService.tracker.stopTracking();
 
@@ -87,7 +85,7 @@ public class TestPerformance {
 	     
 //	    allUsers.forEach(u -> rewardsService.calculateRewards(u));
 
-	    rewardsService.calculateRewards2(allUsers, 500);
+	    rewardsService.calculateRewardsMultiThreading(allUsers, 500);
 	    
 		for(User user : allUsers) {
 //			assertTrue(user.getUserRewards().size() > 0);

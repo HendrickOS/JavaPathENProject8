@@ -84,12 +84,17 @@ public class TourGuideService {
 		VisitedLocation visitedLocation = gpsUtil.getUserLocation(user.getUserId());
 		user.addToVisitedLocations(visitedLocation);
 		rewardsService.calculateRewards(user);
+
+		// Solution : Peut-être appelé la méhtode MultiThreading ici
+//		List<User> allUsers = new ArrayList<>();
+//		allUsers = tourGuideService.getAllUsers();
+//		rewardsService.calculateRewardsMultiThreading(user);
 //		System.out.println(user.getUserName());
 		return visitedLocation;
 	}
 
 	// New method using MultiThreading
-	public void trackUserLocations(List<User> users, int threadNumber) throws InterruptedException {
+	public void trackUserLocationMultiThreading(List<User> users, int threadNumber) throws InterruptedException {
 		List<Thread> threads = new ArrayList<>();
 		for (int i=0; i<threadNumber; i++){
 			int subListSize = users.size()/threadNumber;

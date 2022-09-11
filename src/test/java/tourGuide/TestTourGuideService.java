@@ -3,6 +3,7 @@ package tourGuide;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.UUID;
 
@@ -27,6 +28,10 @@ public class TestTourGuideService {
 		RewardsService rewardsService = new RewardsService(gpsUtil, new RewardCentral());
 		InternalTestHelper.setInternalUserNumber(0);
 		TourGuideService tourGuideService = new TourGuideService(gpsUtil, rewardsService);
+
+		// Needed for using the new Thread Method : trackUserLocations
+		List<User> allUsers = new ArrayList<>();
+		allUsers = tourGuideService.getAllUsers();
 		
 		User user = new User(UUID.randomUUID(), "jon", "000", "jon@tourGuide.com");
 		VisitedLocation visitedLocation = tourGuideService.trackUserLocation(user);
@@ -78,14 +83,21 @@ public class TestTourGuideService {
 	}
 	
 	@Test
-	public void trackUser() {
+	public void trackUser() throws InterruptedException {
 		GpsUtil gpsUtil = new GpsUtil();
 		RewardsService rewardsService = new RewardsService(gpsUtil, new RewardCentral());
 		InternalTestHelper.setInternalUserNumber(0);
 		TourGuideService tourGuideService = new TourGuideService(gpsUtil, rewardsService);
+
+		// Needed for using the new MultiThreading Method : trackUserLocations
+		List<User> allUsers = new ArrayList<>();
+		allUsers = tourGuideService.getAllUsers();
 		
 		User user = new User(UUID.randomUUID(), "jon", "000", "jon@tourGuide.com");
 		VisitedLocation visitedLocation = tourGuideService.trackUserLocation(user);
+
+		// MultiThreading Method
+		// List<VisitedLocation> visitedLocations  = tourGuideService.trackUserLocations(allUsers, 500);
 		
 		tourGuideService.tracker.stopTracking();
 		
