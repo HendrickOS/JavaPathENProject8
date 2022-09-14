@@ -4,9 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
+<<<<<<< HEAD
     <list default="true" id="8552e38b-da3d-4513-9f96-7b8a6d7ca891" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
+=======
+    <list default="true" id="f86b373d-1507-4c0c-911a-694996a91563" name="Default Changelist" comment="" />
+>>>>>>> master
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -47,7 +51,11 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
+<<<<<<< HEAD
   <component name="ProjectId" id="28AAMvRKCPY4b8CDcyiEDISTnMv" />
+=======
+  <component name="ProjectId" id="29SipLX8JdpgJW2M3xYtfTdRS6N" />
+>>>>>>> master
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -56,6 +64,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+<<<<<<< HEAD
     <property name="last_opened_file_path" value="$PROJECT_DIR$/libs/gpsUtil.jar!/gpsUtil/location" />
     <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
@@ -63,6 +72,13 @@
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Hendrick\eclipse-workspace\JavaPathENProject8\TourGuide\libs\gpsUtil.jar!\gpsUtil\location" />
     </key>
+=======
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="DockerRegistry" />
+>>>>>>> master
   </component>
   <component name="RunManager" selected="Gradle.TestPerformance.highVolumeTrackLocation">
     <configuration name="Application" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -78,6 +94,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+<<<<<<< HEAD
+=======
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="gpsUtil.Main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="gpsUtil.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+>>>>>>> master
     <configuration name="TestPerformance.highVolumeGetRewards" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -120,22 +151,61 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
+<<<<<<< HEAD
     <recent_temporary>
       <list>
         <item itemvalue="Gradle.TestPerformance.highVolumeTrackLocation" />
         <item itemvalue="Gradle.TestPerformance.highVolumeGetRewards" />
         <item itemvalue="Application.Application" />
+=======
+    <configuration name="TestRewardsService.nearAllAttractions" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;tourGuide.TestRewardsService.nearAllAttractions&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Gradle.TestPerformance.highVolumeTrackLocation" />
+        <item itemvalue="Application.Application" />
+        <item itemvalue="Application.Main" />
+        <item itemvalue="Gradle.TestPerformance.highVolumeGetRewards" />
+        <item itemvalue="Gradle.TestRewardsService.nearAllAttractions" />
+>>>>>>> master
       </list>
     </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
+<<<<<<< HEAD
       <changelist id="8552e38b-da3d-4513-9f96-7b8a6d7ca891" name="Default Changelist" comment="" />
       <created>1650648974074</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1650648974074</updated>
+=======
+      <changelist id="f86b373d-1507-4c0c-911a-694996a91563" name="Default Changelist" comment="" />
+      <created>1653113070887</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1653113070887</updated>
+>>>>>>> master
     </task>
     <servers />
   </component>
