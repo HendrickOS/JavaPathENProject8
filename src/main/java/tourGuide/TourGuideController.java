@@ -132,7 +132,7 @@ public class TourGuideController {
 //        UserPreferences userPreferences = userUpdate.getUserPreferences();
 //
 //        /*Set of each preferences*/
-//        userPreferences.setAttractionProximity(100);
+//        userPreferences.setAttractionProximity();
 //        userPreferences.setLowerPricePoint();
 //        userPreferences.setHighPricePoint();
 //        userPreferences.setTripDuration();
