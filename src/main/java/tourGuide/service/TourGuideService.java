@@ -86,17 +86,6 @@ public class TourGuideService {
 		rewardsService.calculateRewards(user);
 		System.out.println(user.getUserName());
 
-		// ~Solution : Peut-être appelé la méhtode MultiThreading ici
-//		List<User> allUsers = new ArrayList<>();
-////		allUsers = this.getAllUsers();
-//		allUsers.add(user);
-//
-//		try {
-//			rewardsService.calculateRewardsMultiThreading(allUsers, 500);
-//		} catch (InterruptedException e){
-//			throw new RuntimeException(e);
-//		};
-
 		return visitedLocation;
 	}
 

@@ -42,28 +42,6 @@ public class TestTourGuideService {
 		tourGuideService.tracker.stopTracking();
 		assertTrue(visitedLocation.userId.equals(user.getUserId()));
 	}
-
-//	@Test
-//	public void getUserLocation_multiThreading() {
-//		GpsUtil gpsUtil = new GpsUtil();
-//		RewardsService rewardsService = new RewardsService(gpsUtil, new RewardCentral());
-//		InternalTestHelper.setInternalUserNumber(0);
-//		TourGuideService tourGuideService = new TourGuideService(gpsUtil, rewardsService);
-//
-//		User user = new User(UUID.randomUUID(), "jon", "000", "jon@tourGuide.com");
-//
-//		List<User> allUsers = new ArrayList<>();
-//		allUsers.add(user);
-//		List<VisitedLocation> visitedLocationList = new ArrayList<>();
-//
-//		for(User utilisateur : allUsers){
-//			VisitedLocation visitedLocation = tourGuideService.trackUserLocationMultiThreading(allUsers, 500);
-//		}
-//		VisitedLocation visitedLocation = tourGuideService.trackUserLocationMultiThreading(allUsers, 500);
-//
-//		tourGuideService.tracker.stopTracking();
-//		assertTrue(visitedLocation.userId.equals(user.getUserId()));
-//	}
 	
 	@Test
 	public void addUser() {
@@ -122,25 +100,6 @@ public class TestTourGuideService {
 		
 		assertEquals(user.getUserId(), visitedLocation.userId);
 	}
-
-//	@Test
-//	public void trackUser_multiThreading() {
-//		GpsUtil gpsUtil = new GpsUtil();
-//		RewardsService rewardsService = new RewardsService(gpsUtil, new RewardCentral());
-//		InternalTestHelper.setInternalUserNumber(0);
-//		TourGuideService tourGuideService = new TourGuideService(gpsUtil, rewardsService);
-//
-//		User user = new User(UUID.randomUUID(), "jon", "000", "jon@tourGuide.com");
-////		VisitedLocation visitedLocation = tourGuideService.trackUserLocation(user);
-//
-//		List<User> allUsers = new ArrayList<>();
-//		allUsers.add(user);
-//		VisitedLocation visitedLocation = tourGuideService.trackUserLocationMultiThreading(allUsers, 500);
-//
-//		tourGuideService.tracker.stopTracking();
-//
-//		assertEquals(user.getUserId(), visitedLocation.userId);
-//	}
 	
 	@Ignore // Not yet implemented
 	@Test

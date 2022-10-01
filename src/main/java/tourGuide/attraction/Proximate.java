@@ -10,8 +10,6 @@ public class Proximate implements Comparable<Proximate> {
     public int compareTo(Proximate o) {
         return distance.compareTo(o.distance);
     }
-    //public in compareTo<Proximate> (Proximate o) {
-
 
     public Attraction getAttraction() {
         return attraction;

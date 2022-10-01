@@ -40,31 +40,6 @@ public class TestRewardsService {
 		tourGuideService.tracker.stopTracking();
 		assertTrue(userRewards.size() == 1);
 	}
-
-//	@Test
-//	public void userGetRewards_multiThreading() {
-//		GpsUtil gpsUtil = new GpsUtil();
-//		RewardsService rewardsService = new RewardsService(gpsUtil, new RewardCentral());
-//
-//		InternalTestHelper.setInternalUserNumber(0);
-//		TourGuideService tourGuideService = new TourGuideService(gpsUtil, rewardsService);
-//
-//		List<User> allUsers = new ArrayList<>();
-//
-//		User user = new User(UUID.randomUUID(), "jon", "000", "jon@tourGuide.com");
-//		Attraction attraction = gpsUtil.getAttractions().get(0);
-//		user.addToVisitedLocations(new VisitedLocation(user.getUserId(), attraction, new Date()));
-//
-//		allUsers.add(user);
-//		try {
-//			tourGuideService.trackUserLocationMultiThreading(allUsers, 500);
-//		} catch (InterruptedException e) {
-//			throw new RuntimeException(e);
-//		}
-//		List<UserReward> userRewards = user.getUserRewards();
-//		tourGuideService.tracker.stopTracking();
-//		assertTrue(userRewards.size() == 1);
-//	}
 	
 	@Test
 	public void isWithinAttractionProximity() {
