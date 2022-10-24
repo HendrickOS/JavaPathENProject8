@@ -54,7 +54,6 @@ public class RewardsService {
 		}
 	}
 
-	// New method using MultiThreading
 	public void calculateRewardsMultiThreading(List<User> users, int threadNumber) throws InterruptedException {
 		List<Thread> threads = new ArrayList<>();
 		for (int i=0; i<threadNumber; i++){

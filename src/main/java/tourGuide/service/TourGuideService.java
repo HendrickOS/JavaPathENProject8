@@ -89,7 +89,6 @@ public class TourGuideService {
 		return visitedLocation;
 	}
 
-	// New method using MultiThreading
 	public void trackUserLocationMultiThreading(List<User> users, int threadNumber) throws InterruptedException {
 		List<Thread> threads = new ArrayList<>();
 		for (int i=0; i<threadNumber; i++){

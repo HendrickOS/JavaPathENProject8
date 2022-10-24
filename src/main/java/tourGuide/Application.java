@@ -14,20 +14,6 @@ public class Application {
 
         SpringApplication.run(Application.class, args);
 
-//        MultiThreading multiThreading = new MultiThreading();
-//        multiThreading.start();
-//        multiThreading.run();
-
-//        MultiThreading multiThreading2 = new MultiThreading();
-//        multiThreading2.start();
-//        multiThreading2.run();
-
-        /* On peut également faire une boucle */
-//        for (int i=0; i<5; i++){
-//            MultiThreading multiThreading = new MultiThreading();
-//            multiThreading.start();
-//        }
-
     }
 
 }
